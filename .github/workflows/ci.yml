@@ -90,4 +90,4 @@ jobs:
       #   uses: codecov/codecov-action@v7
       #   with:
       #     token: ${{ secrets.CODECOV_TOKEN }}
-      #     slug: typescript-monorepo-org/typescript-monorepo-template
+      #     slug: typescript-monorepo-org/desktop-app-template

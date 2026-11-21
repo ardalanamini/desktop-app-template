@@ -25,11 +25,11 @@ Inspect the current files before editing. The original values and locations are:
 
 | Location | Template content | Action |
 | --- | --- | --- |
-| `package.json` | `@typescript-monorepo-org/typescript-monorepo-template` | Set `name` to the chosen npm package name. |
+| `package.json` | `@typescript-monorepo-org/desktop-app-template` | Set `name` to the chosen npm package name. |
 | `package.json` | `description`, `repository.url`, `bugs.url` | Set the project description and destination repository/issue URLs, preserving the repository object format. |
 | `README.md` | `TypeScript Monorepo Template` | Set the title and add the project description; retain useful project guidance, including the AGENTS.md link. |
 | `CODEOWNERS` | `* @ardalanamini` | Replace with the chosen owners, or remove this template rule if requested; delete the file only if nothing useful remains. |
-| `.github/workflows/ci.yml` | Codecov upload step (initially commented) with `typescript-monorepo-org/typescript-monorepo-template` | Apply the user's Codecov choice as described below. |
+| `.github/workflows/ci.yml` | Codecov upload step (initially commented) with `typescript-monorepo-org/desktop-app-template` | Apply the user's Codecov choice as described below. |
 
 Search tracked and non-ignored project files, including hidden files, for these old identifiers and title. Inspect matches in any added workspace manifests, internal imports, and dependency names; update related names consistently. Regenerate the lockfile with the repository's pinned pnpm version if dependency metadata changes.
 

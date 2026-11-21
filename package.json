@@ -1,14 +1,14 @@
 {
-  "name": "@typescript-monorepo-org/typescript-monorepo-template",
+  "name": "@typescript-monorepo-org/desktop-app-template",
   "private": true,
   "version": "0.0.0",
-  "description": "typescript-monorepo-template",
+  "description": "desktop-app-template",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/typescript-monorepo-org/typescript-monorepo-template.git"
+    "url": "git+https://github.com/typescript-monorepo-org/desktop-app-template.git"
   },
   "bugs": {
-    "url": "https://github.com/typescript-monorepo-org/typescript-monorepo-template/issues"
+    "url": "https://github.com/typescript-monorepo-org/desktop-app-template/issues"
   },
   "scripts": {
     "typecheck": "tsrs --noEmit",

@@ -1,4 +1,4 @@
-# TypeScript Monorepo Template
+# Desktop Application Template
 
 ## Initialize your project
 
