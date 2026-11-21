@@ -1,0 +1,31 @@
+packages:
+  - apps/*
+  - packages/*
+
+tasks:
+  build:
+    dependsOn:
+      - ^build
+  test:
+    dependsOn:
+      - ^test
+  test:coverage:
+    dependsOn:
+      - ^test:coverage
+
+includeWorkspaceRoot: false
+
+injectWorkspacePackages: true
+
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+
+autoDedupe: true
+
+lockfile:
+  includeResolutionSettings: true
+
+allowBuilds:
+  "@parcel/watcher": false
+  lefthook: false
+  unrs-resolver: false
