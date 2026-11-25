@@ -3,6 +3,7 @@
     "JavaScript": {
       "language_servers": [
         "!eslint",
+        "!vtsls",
         "...",
       ],
       "format_on_save": "on",
@@ -32,6 +33,23 @@
       },
     },
     "TSX": {
+      "language_servers": [
+        "!eslint",
+        "!vtsls",
+        "!typescript-language-server",
+        "typescript-ls",
+        "...",
+      ],
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false,
+      },
+      "formatter": [],
+      "code_actions_on_format": {
+        "source.fixAll.oxc": true,
+      },
+    },
+    "Svelte": {
       "language_servers": [
         "!eslint",
         "!vtsls",

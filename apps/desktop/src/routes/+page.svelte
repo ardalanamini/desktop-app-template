@@ -1,14 +1,15 @@
 <script lang="ts">
-  import { invoke } from "@tauri-apps/api/core";
+import { invoke } from "@tauri-apps/api/core";
 
-  let name = $state("");
-  let greetMsg = $state("");
+let name = $state("");
+let greetMessage = $state("");
 
-  async function greet(event: Event) {
-    event.preventDefault();
-    // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    greetMsg = await invoke("greet", { name });
-  }
+async function greet(event: Event): Promise<void> {
+  event.preventDefault();
+
+  // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+  greetMessage = await invoke("greet", { name });
+}
 </script>
 
 <main class="container">
@@ -31,7 +32,7 @@
     <input id="greet-input" placeholder="Enter a name..." bind:value={name} />
     <button type="submit">Greet</button>
   </form>
-  <p>{greetMsg}</p>
+  <p>{greetMessage}</p>
 </main>
 
 <style>
