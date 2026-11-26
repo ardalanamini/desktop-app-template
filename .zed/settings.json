@@ -1,10 +1,7 @@
 {
   "languages": {
     "JavaScript": {
-      "language_servers": [
-        "!eslint",
-        "...",
-      ],
+      "language_servers": ["!eslint", "!vtsls", "..."],
       "format_on_save": "on",
       "prettier": {
         "allowed": false,
@@ -48,13 +45,35 @@
         "source.fixAll.oxc": true,
       },
     },
+    "Svelte": {
+      "language_servers": [
+        "!eslint",
+        "!vtsls",
+        "!typescript-language-server",
+        "typescript-ls",
+        "...",
+      ],
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false,
+      },
+      "formatter": [],
+      "code_actions_on_format": {
+        "source.fixAll.oxc": true,
+      },
+    },
   },
   "lsp": {
+    "typescript-ls": {
+      "binary": {
+        "path": "./node_modules/.bin/tsrs",
+        "arguments": ["--lsp", "--stdio"],
+      },
+    },
     "oxlint": {
       "initialization_options": {
         "settings": {
           "configPath": "./oxlint.config.ts",
-          "tsConfigPath": "./tsconfig.json",
           "typeAware": true,
           "disableNestedConfig": false,
           "fixKind": "safe_fix_or_suggestion",

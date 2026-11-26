@@ -12,13 +12,13 @@
   },
   "scripts": {
     "typecheck": "tsrs --noEmit",
-    "build": "pnpm -r run build",
+    "build": "pnpm -r run --if-present build",
     "lint": "oxlint",
     "lint:fix": "pnpm lint --fix",
     "lint:typecheck": "oxlint --type-check",
     "lint:typecheck:fix": "pnpm lint:typecheck --fix",
-    "test": "pnpm -r run test",
-    "test:coverage": "pnpm -r run test:coverage",
+    "test": "pnpm -r run --if-present test",
+    "test:coverage": "pnpm -r run --if-present test:coverage",
     "knip": "knip",
     "prepare": "is-ci || lefthook install"
   },
