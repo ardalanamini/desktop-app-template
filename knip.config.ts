@@ -3,10 +3,6 @@ import type { KnipConfig } from "knip";
 export default {
   workspaces: {
     "."           : {},
-    "apps/desktop": {
-      svelte: {
-        config: ["svelte.config.ts"],
-      },
-    },
+    "apps/desktop": {},
   },
 } satisfies KnipConfig;

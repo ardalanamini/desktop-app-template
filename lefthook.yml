@@ -9,7 +9,7 @@ pre-commit:
   jobs:
     - name: lint
       run: pnpm lint:fix --format=stylish {staged_files}
-      glob: "*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}"
+      glob: "*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,svelte}"
       stage_fixed: true
 
     - name: type check
