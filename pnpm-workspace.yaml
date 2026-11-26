@@ -25,6 +25,9 @@ autoDedupe: true
 lockfile:
   includeResolutionSettings: true
 
+cargo:
+  enabled: true
+
 allowBuilds:
   "@parcel/watcher": false
   lefthook: false
