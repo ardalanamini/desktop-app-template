@@ -11,6 +11,10 @@ repository acme/platform, description "Shared services for Acme", and code owner
 
 The skill updates project names and metadata, removes template-specific content, runs the repository checks, and removes itself and this section when initialization succeeds. Review and commit the resulting changes.
 
+## Cargo workspace
+
+The desktop app in `apps/desktop/src-tauri` shares the root `Cargo.lock`, release profile, and `target/` directory with other workspace members. Run `cargo new --lib crates/my-crate` from the repository root to create and register a library crate. A default `pnpm build` writes Tauri bundles to `target/release/bundle/`.
+
 ## 3rd Party Agent Skills Reference
 
 - Included:
